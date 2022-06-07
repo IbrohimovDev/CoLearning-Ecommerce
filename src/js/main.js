@@ -90,23 +90,6 @@ document.addEventListener("click", closeAllSelect);
 
 
 
-// // Tab
-// let tabs = document.querySelectorAll('.tab-btn'),
-//   contents = document.querySelectorAll('.tab-body');
-
-// tabs.forEach((tab, index) => {
-//   tab.addEventListener('click', () => {
-//     contents.forEach((content) => {
-//       content.classList.remove('active')
-//     })
-//     tabs.forEach((tab) => {
-//       tab.classList.remove('active')
-
-//     })
-//     contents[index].classList.add('active')
-//     tabs[index].classList.add('active')
-//   })
-// })
 
 
 // // Swiper js
@@ -215,6 +198,25 @@ var swiper = new Swiper(".fourSwiper", {
     }
   },
 });
+
+// Tab
+let tabs = document.querySelectorAll('.tab-btn'),
+  contents = document.querySelectorAll('.tab-body');
+
+tabs.forEach((tab, index) => {
+  tab.addEventListener('click', () => {
+    contents.forEach((content) => {
+      content.classList.remove('active')
+    })
+    tabs.forEach((tab) => {
+      tab.classList.remove('active')
+
+    })
+    contents[index].classList.add('active')
+    tabs[index].classList.add('active')
+  })
+})
+
 
 
 let grid = document.querySelector('.grid-view')

@@ -317,9 +317,9 @@
             </div>
             <div class="py-4 relative filters">
                 <div class="w-full flex flex-wrap items-center gap-4 mb-4">
-                    <div class="block lg:hidden p-2 bg-[#6A983C] rounded-xl cursor-pointer filter-btn">
-                        <img src="./img/burger.svg" alt="">
-                    </div>
+                    <a href="#filter-aside" class="block lg:hidden p-2 bg-[#6A983C] rounded-xl cursor-pointer filter-btn">
+                        <img src="./img/filter.svg" alt="">
+                    </a>
                     <form class="gray-rounded">
                         <label>
                             <input type="radio" name="radio" checked />
@@ -381,8 +381,8 @@
     </section>
 
     <section class="flex justify-between">
-        <div class="absolute -left-full lg:left-0 lg:relative ml-5 max-w-[30%] duration-300 filter-aside">
-            <div class="flex flex-col items-center">
+        <div class="absolute -left-full lg:left-0 lg:relative ml-5 lg:max-w-[30%] duration-300 filter-aside" id="filter-aside">
+            <div class="flex flex-col items-start">
                 <div class="aside-links mb-12">
                     <h4 class="aside-links__title">Categories</h4>
                     <div class="aside-links__item-nolink">
@@ -804,7 +804,7 @@
     </section>
 
     <section>
-        <div class="main-container flex-row">
+        <div class="main-container flex-row flex-wrap">
             <div class="flex items-center pagination text-[12px] leading-[16px] font-normal gap-2">
                 <p class="text-[#a9a9a9]">Page: </p>
                 <a href="#">1</a>

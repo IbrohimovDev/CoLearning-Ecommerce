@@ -34,7 +34,7 @@
 
 
     .aside-links {
-        @apply rounded-xl w-[269px] h-[282px]
+        @apply rounded-xl  w-full h-[282px]
     }
     .aside-links__title {
         @apply text-[18px] mb-4 font-semibold leading-[27px] font-['Poppins']
@@ -102,7 +102,11 @@
 
 
     .gray-rounded {
-        @apply border border-solid border-[#d1d1d1] bg-[#f9f9f9] rounded-[12px]
+        @apply border border-solid border-[#d1d1d1] bg-[#f9f9f9] rounded-xl
+    }
+
+    .rounded-bordered {
+        @apply border border-solid rounded-xl
     }
 
     .filter-text {
