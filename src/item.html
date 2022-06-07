@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Freshnesecom</title>
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+    <section class="py-0">
+        <header>
+            <div
+                class="flex md:hidden w-full min-h-screen fixed top-0 left-[-100%] justify-center items-center bg-white z-50 duration-300 mobile-menu">
+                <div class="flex flex-col min-h-full">
+                    <div class="flex flex-col items-center gap-[33px]">
+                        <a href="#" class="text-[12px] leading-[16px] text-[#6a983c]">Blog</a>
+                        <a href="#" class="text-[12px] leading-[16px] text-[#6a983c]">About</a>
+                        <a href="#" class="text-[12px] leading-[16px] text-[#6a983c]">Careers</a>
+                        <a href="#" class="text-[12px] leading-[16px] text-[#6A983C] font-normal">Chat with us</a>
+                        <a href="tel:998330072003" class="text-[12px] leading-[16px] font-normal">+998 33 007 20 03</a>
+                        <a href="mailto:mrimofficial7@gmail.com"
+                            class="text-[12px] leading-[16px] font-normal">info@freshnesecom.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-container flex-row fixed top-0 left-0 w-full bg-white z-50 px-5 flex md:hidden shadow-lg">
+                <a href="./index.html">
+                    <div class="logo mr-2">
+                        <img src="./img/Brand.svg" alt="">
+                    </div>
+                </a>
+                <div class="mobile-burger relative z-50 right-0 w-5 h-5 bg-cover bg-no-repeat bg-center">
+                </div>
+            </div>
+            <div class="main-container hidden md:flex flex-row items-center py-4">
+                <div class="flex items-center gap-[33px]">
+                    <a href="#" class="text-[12px] leading-[16px] text-[#6A983C] font-normal">Chat with us</a>
+                    <a href="tel:998330072003" class="text-[12px] leading-[16px] font-normal">+998 33 007 20 03</a>
+                    <a href="mailto:mrimofficial7@gmail.com"
+                        class="text-[12px] leading-[16px] font-normal">info@freshnesecom.com</a>
+                </div>
+                <div class="flex items-center gap-[38px]">
+                    <a href="#" class="text-[12px] leading-[16px] text-[#6a983c]">Blog</a>
+                    <a href="#" class="text-[12px] leading-[16px] text-[#6a983c]">About</a>
+                    <a href="#" class="text-[12px] leading-[16px] text-[#6a983c]">Careers</a>
+                </div>
+            </div>
+            <div class="w-[90%] max-w-[1260px] mx-auto">
+                <hr class="bg-[#151515]">
+            </div>
+            <div class="main-container flex-row items-center pt-20 md:pt-10 pb-12">
+                <a href="#">
+                    <div class="logo mr-5 hidden md:block">
+                        <img src="./img/Brand.svg" alt="brand logo">
+                    </div>
+                </a>
+                <div
+                    class="flex items-center justify-between rounded-[12px] max-w-[500px] sm:w-[500px] border border-solid border-[#d1d1d1] bg-[#f9f9f9] py-[10px] px-4">
+                    <!-- Dropdown -->
+                    <div class="custom-select border-r border-solid border-[#d1d1d1]" style="width:140px;">
+                        <select>
+                            <option value="0">All categories</option>
+                            <option value="1">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Kitchen</option>
+                            <option value="7">Nutrition</option>
+                            <option value="8">Baby</option>
+                            <option value="9">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text"
+                            class="w-full border-none outline-none px-3 max-w-[262px] text-[14px] bg-transparent placeholder:text-[#a9a9a9] placeholder:text-[14px]"
+                            placeholder="Search Products, categories">
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./img/icon-search.svg" alt="search icon">
+                    </div>
+                </div>
+                <div
+                    class="fixed sm:relative bottom-0 left-0 w-full h-14 sm:py-0 bg-white flex items-center justify-around sm:justify-between sm:w-[88px] ml-0 sm:ml-5 z-40">
+                    <div>
+                        <img src="./img/icon-user.svg" alt="user icon">
+                    </div>
+                    <div class="relative cart-wrapper">
+                        <img src="./img/icon-cart.svg" alt="cart icon">
+                        <div
+                            class="absolute -bottom-[8px] -left-[5px] w-4 h-4 rounded-full flex items-center justify-center bg-[#E5704B]">
+                            <span class="text-white text-[12px] font-semibold">4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="bg-[#f9f9f9] py-4">
+                <div class="main-container flex-row items-center justify-start gap-[42px]">
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="0">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Kitchen</option>
+                            <option value="7">Nutrition</option>
+                            <option value="8">Baby</option>
+                            <option value="9">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="1">Fruit</option>
+                            <option value="2">Bakery</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Kitchen</option>
+                            <option value="7">Nutrition</option>
+                            <option value="8">Baby</option>
+                            <option value="9">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="1">Vegetables</option>
+                            <option value="2">Bakery</option>
+                            <option value="3">Fruit</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Kitchen</option>
+                            <option value="7">Nutrition</option>
+                            <option value="8">Baby</option>
+                            <option value="9">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="0">Meat</option>
+                            <option value="1">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Drinks</option>
+                            <option value="5">Kitchen</option>
+                            <option value="6">Nutrition</option>
+                            <option value="7">Baby</option>
+                            <option value="8">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="0">Drinks</option>
+                            <option value="1">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Kitchen</option>
+                            <option value="6">Nutrition</option>
+                            <option value="7">Baby</option>
+                            <option value="8">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="0">Kitchen</option>
+                            <option value="1">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Nutrition</option>
+                            <option value="7">Baby</option>
+                            <option value="8">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="0">Nutrition</option>
+                            <option value="1">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Kitchen</option>
+                            <option value="7">Baby</option>
+                            <option value="8">Pharmacy</option>
+                        </select>
+                    </div>
+
+                    <div class="swiper navSwiper block md:hidden">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/bread.jpg" alt="bread">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Bakery</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/fruit.jpg" alt="fruit">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Fruit</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/vegetable.jpg" alt="vegetable">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Vegetables</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/meat.jpg" alt="meat">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Fish and Meat</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/drink.jpg" alt="drink">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Drinks</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/kitchen.jpg" alt="kitchen">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Kitchen</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/baby.jpg" alt="baby">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Baby nutrition</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <section class="pt-0">
+        <div class="main-container items-start">
+            <p class="py-4 mb-2 text-[12px] font-normal leading-[16px]">
+                <a href="./index.html" target="_blank" class="text-[#A9A9A9]">Homepage</a>
+                <span class="mx-2">/</span>
+                <a href="./products.html" target="_blank" class="text-[#A9A9A9]">Fruit and vegetables</a>
+                <span class="mx-2">/</span>
+                <span href="#">Carrots from Tomissy Farm</span>
+            </p>
+        </div>
+    </section>
+
+    <div class="main-container items-start flex-col lg:flex-row gap-8">
+        <div class="swiper mySwiper block lg:hidden">
+            <div class="absolute z-40 left-0 top-[40%] -translate-y-[40%]  w-[88px] h-full bg-gradient-to-r from-white">
+                <div
+                    class="prev absolute flex items-center justify-center top-1/2 -translate-y-[40%] left-0 w-8 h-12 bg-black rounded-tr-[12px] rounded-br-[12px]">
+                    <img src="./img/chevron-white.svg" alt="chevron">
+                </div>
+            </div>
+            <div
+                class="absolute z-40 right-0 top-[40%] -translate-y-[40%] w-[88px]  h-full bg-gradient-to-r from-transparent to-white">
+                <div
+                    class="next absolute flex items-center justify-center top-1/2 -translate-y-[40%] right-0 w-8 h-12 bg-black rounded-tl-[12px] rounded-bl-[12px]">
+                    <img class="rotate-180" src="./img/chevron-white.svg" alt="chevron">
+                </div>
+            </div>
+            <div class="swiper-wrapper items-img">
+                <div class="swiper-slide">
+                    <div class="item-imgBox">
+                        <div class="absolute top-4 left-4 z-30">
+                            <div class="tag tag-selected">-36%</div>
+                            <div class="tag tag-selected">Free shipping</div>
+                        </div>
+                        <img src="./img/bread.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item-imgBox">
+                        <img src="./img/bread.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item-imgBox">
+                        <img src="./img/bread.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item-imgBox">
+                        <img src="./img/bread.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item-imgBox">
+                        <img src="./img/bread.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-1/2 hidden lg:flex flex-col gap-8">
+            <div class="item-imgBox">
+                <div class="absolute top-4 left-4 z-30">
+                    <div class="tag tag-selected">-36%</div>
+                    <div class="tag tag-selected">Free shipping</div>
+                </div>
+                <img src="./img/bread.jpg" alt="">
+            </div>
+            <div class="item-imgBox">
+                <img src="./img/bread.jpg" alt="">
+            </div>
+            <div class="item-imgBox">
+                <img src="./img/bread.jpg" alt="">
+            </div>
+        </div>
+        <div class="w-full lg:w-1/2">
+            <div>
+                <h1 class="text-[32px] font-bold leading-[120%] mb-2">Carrots from Tomissy farm</h1>
+                <div class="flex items-center mb-10 gap-[10px]">
+                    <div class="flex items-center gap-[5px]">
+                        <img class="w-[16.74px] h-[15.97px]" src="./img/icon-star.svg" alt="icon star">
+                        <img class="w-[16.74px] h-[15.97px]" src="./img/icon-star.svg" alt="icon star">
+                        <img class="w-[16.74px] h-[15.97px]" src="./img/icon-star.svg" alt="icon star">
+                        <img class="w-[16.74px] h-[15.97px]" src="./img/icon-star.svg" alt="icon star">
+                        <img class="w-[16.74px] h-[15.97px]" src="./img/icon-star-gray.svg" alt="icon star">
+                    </div>
+                    <p class="text-[12px] text-[#a9a9a9] font-normal leading-[16px]">(1 customer review)</p>
+                </div>
+                <p class="text-[17px] font-normal leading-[17px] mb-10">Carrots from Tomissy Farm are one of the best on the
+                    market. Tomisso and his family are giving a full love to his Bio products. Tomisso’s carrots are
+                    growing on the fields naturally.
+                </p>
+                <table class="table-auto">
+                    <tbody>
+                        <tr>
+                            <td>SKU</td>
+                            <td>76645</td>
+                            <td>Fresheness</td>
+                            <td>1 day old</td>
+                        </tr>
+                        <tr>
+                            <td>Category</td>
+                            <td>Vegetables</td>
+                            <td>Buy by</td>
+                            <td>pcs, kg, box, pack</td>
+                        </tr>
+                        <tr>
+                            <td>Stock</td>
+                            <td>In Stock<td>
+                            <td>Delivery</td>
+                            <td>In 2 days</td>
+                        </tr>
+                        <tr>
+                            <td>Farm</td>
+                            <td>Grocery Tarm Fields<td>
+                            <td>Delivery area</td>
+                            <td>Czech republic</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer py-16">
+        <div class="main-container md:flex-row items-stretch justify-between mb-12">
+            <div class="footer-links w-full flex flex-row justify-around flex-wrap md:flex-nowrap">
+                <div class="mr-5 mb-5">
+                    <h4 class="footer__title">Get In Touch</h4>
+                    <div class="footer__anchor-wrapper">
+                        <a href="#" class="footer__anchor">About us</a>
+                        <a href="#" class="footer__anchor">Careers</a>
+                        <a href="#" class="footer__anchor">Press releases</a>
+                        <a href="#" class="footer__anchor">Blog</a>
+                    </div>
+                </div>
+                <div class="mr-5 mb-5">
+                    <h4 class="footer__title">Connections</h4>
+                    <div class="footer__anchor-wrapper">
+                        <a href="#" class="footer__anchor">Facebook</a>
+                        <a href="#" class="footer__anchor">Instagram</a>
+                        <a href="#" class="footer__anchor">Twitter</a>
+                        <a href="#" class="footer__anchor">YouTube</a>
+                        <a href="#" class="footer__anchor">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links w-full flex flex-row justify-around flex-wrap md:flex-nowrap">
+                <div class="mr-5 mb-5">
+                    <h4 class="footer__title">Earnings</h4>
+                    <div class="footer__anchor-wrapper">
+                        <a href="#" class="footer__anchor">Become an affilate</a>
+                        <a href="#" class="footer__anchor">Advertise your product</a>
+                        <a href="#" class="footer__anchor">Sell on Market</a>
+                    </div>
+                </div>
+                <div class="mr-5 mb-5">
+                    <h4 class="footer__title">Account</h4>
+                    <div class="footer__anchor-wrapper">
+                        <a href="#" class="footer__anchor">Your account</a>
+                        <a href="#" class="footer__anchor">Returns center</a>
+                        <a href="#" class="footer__anchor">100% purchase protection</a>
+                        <a href="#" class="footer__anchor">Chat with us</a>
+                        <a href="#" class="footer__anchor">Help</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container items-start mb-8">
+            <h4 class="font-['Poppins'] font-semibold text-[18px] leading-[27px] mb-4">Product tags</h4>
+            <div class="flex flex-wrap gap-4">
+                <div class="tag tag-not-selected">Beans</div>
+                <div class="tag tag-not-selected">Carrots</div>
+                <div class="tag tag-not-selected">Apples</div>
+                <div class="tag tag-not-selected">Garlic</div>
+                <div class="tag tag-not-selected">Mushrooms</div>
+                <div class="tag tag-not-selected">Tomatoes</div>
+                <div class="tag tag-not-selected">Chillie peppers</div>
+                <div class="tag tag-not-selected">Broccoli</div>
+                <div class="tag tag-not-selected">Watermelons </div>
+                <div class="tag tag-not-selected">Oranges</div>
+                <div class="tag tag-not-selected">Bananas</div>
+                <div class="tag tag-not-selected">Grapes</div>
+                <div class="tag tag-not-selected">Cherries</div>
+                <div class="tag tag-not-selected">Meat</div>
+                <div class="tag tag-not-selected">Seo tag</div>
+                <div class="tag tag-not-selected">Fresh food</div>
+                <div class="tag tag-not-selected">Lemons</div>
+            </div>
+        </div>
+        <div class="main-container items-start">
+            <p class="font-normal text-[14px] leading-[19px]">Copyright &copy; 2020 UIC.group</p>
+        </div>
+    </footer>
+
+    <!--SVG Sprites -->
+
+    <!-- Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- My.js -->
+    <script src="./js/scripts.js"></script>
+
+
+</body>
+
+</html>

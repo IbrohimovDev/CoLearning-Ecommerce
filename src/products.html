@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Freshnesecom</title>
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+    <section class="py-0">
+        <header>
+            <div
+                class="flex md:hidden w-full min-h-screen fixed top-0 left-[-100%] justify-center items-center bg-white z-50 duration-300 mobile-menu">
+                <div class="flex flex-col min-h-full">
+                    <div class="flex flex-col items-center gap-[33px]">
+                        <a href="#" class="text-[12px] leading-[16px] text-[#6a983c]">Blog</a>
+                        <a href="#" class="text-[12px] leading-[16px] text-[#6a983c]">About</a>
+                        <a href="#" class="text-[12px] leading-[16px] text-[#6a983c]">Careers</a>
+                        <a href="#" class="text-[12px] leading-[16px] text-[#6A983C] font-normal">Chat with us</a>
+                        <a href="tel:998330072003" class="text-[12px] leading-[16px] font-normal">+998 33 007 20 03</a>
+                        <a href="mailto:mrimofficial7@gmail.com"
+                            class="text-[12px] leading-[16px] font-normal">info@freshnesecom.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-container flex-row fixed top-0 left-0 w-full bg-white z-50 px-5 flex md:hidden shadow-lg">
+                <a href="./index.html">
+                    <div class="logo mr-2">
+                        <img src="./img/Brand.svg" alt="">
+                    </div>
+                </a>
+                <div class="mobile-burger relative z-50 right-0 w-5 h-5 bg-cover bg-no-repeat bg-center">
+                </div>
+            </div>
+            <div class="main-container hidden md:flex flex-row items-center py-4">
+                <div class="flex items-center gap-[33px]">
+                    <a href="#" class="text-[12px] leading-[16px] text-[#6A983C] font-normal">Chat with us</a>
+                    <a href="tel:998330072003" class="text-[12px] leading-[16px] font-normal">+998 33 007 20 03</a>
+                    <a href="mailto:mrimofficial7@gmail.com"
+                        class="text-[12px] leading-[16px] font-normal">info@freshnesecom.com</a>
+                </div>
+                <div class="flex items-center gap-[38px]">
+                    <a href="#" class="text-[12px] leading-[16px] text-[#6a983c]">Blog</a>
+                    <a href="#" class="text-[12px] leading-[16px] text-[#6a983c]">About</a>
+                    <a href="#" class="text-[12px] leading-[16px] text-[#6a983c]">Careers</a>
+                </div>
+            </div>
+            <div class="w-[90%] max-w-[1260px] mx-auto">
+                <hr class="bg-[#151515]">
+            </div>
+            <div class="main-container flex-row items-center pt-20 md:pt-10 pb-12">
+                <a href="#">
+                    <div class="logo mr-5 hidden md:block">
+                        <img src="./img/Brand.svg" alt="brand logo">
+                    </div>
+                </a>
+                <div
+                    class="flex items-center justify-between rounded-[12px] max-w-[500px] sm:w-[500px] border border-solid border-[#d1d1d1] bg-[#f9f9f9] py-[10px] px-4">
+                    <!-- Dropdown -->
+                    <div class="custom-select border-r border-solid border-[#d1d1d1]" style="width:140px;">
+                        <select>
+                            <option value="0">All categories</option>
+                            <option value="1">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Kitchen</option>
+                            <option value="7">Nutrition</option>
+                            <option value="8">Baby</option>
+                            <option value="9">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text"
+                            class="w-full border-none outline-none px-3 max-w-[262px] text-[14px] bg-transparent placeholder:text-[#a9a9a9] placeholder:text-[14px]"
+                            placeholder="Search Products, categories">
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./img/icon-search.svg" alt="search icon">
+                    </div>
+                </div>
+                <div
+                    class="fixed sm:relative bottom-0 left-0 w-full h-14 sm:py-0 bg-white flex items-center justify-around sm:justify-between sm:w-[88px] ml-0 sm:ml-5 z-40">
+                    <div>
+                        <img src="./img/icon-user.svg" alt="user icon">
+                    </div>
+                    <div class="relative cart-wrapper">
+                        <img src="./img/icon-cart.svg" alt="cart icon">
+                        <div
+                            class="absolute -bottom-[8px] -left-[5px] w-4 h-4 rounded-full flex items-center justify-center bg-[#E5704B]">
+                            <span class="text-white text-[12px] font-semibold">4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="bg-[#f9f9f9] py-4">
+                <div class="main-container flex-row items-center justify-start gap-[42px]">
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="0">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Kitchen</option>
+                            <option value="7">Nutrition</option>
+                            <option value="8">Baby</option>
+                            <option value="9">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="1">Fruit</option>
+                            <option value="2">Bakery</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Kitchen</option>
+                            <option value="7">Nutrition</option>
+                            <option value="8">Baby</option>
+                            <option value="9">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="1">Vegetables</option>
+                            <option value="2">Bakery</option>
+                            <option value="3">Fruit</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Kitchen</option>
+                            <option value="7">Nutrition</option>
+                            <option value="8">Baby</option>
+                            <option value="9">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="0">Meat</option>
+                            <option value="1">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Drinks</option>
+                            <option value="5">Kitchen</option>
+                            <option value="6">Nutrition</option>
+                            <option value="7">Baby</option>
+                            <option value="8">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="0">Drinks</option>
+                            <option value="1">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Kitchen</option>
+                            <option value="6">Nutrition</option>
+                            <option value="7">Baby</option>
+                            <option value="8">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="0">Kitchen</option>
+                            <option value="1">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Nutrition</option>
+                            <option value="7">Baby</option>
+                            <option value="8">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="0">Nutrition</option>
+                            <option value="1">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Kitchen</option>
+                            <option value="7">Baby</option>
+                            <option value="8">Pharmacy</option>
+                        </select>
+                    </div>
+
+                    <div class="swiper navSwiper block md:hidden">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/bread.jpg" alt="bread">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Bakery</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/fruit.jpg" alt="fruit">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Fruit</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/vegetable.jpg" alt="vegetable">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Vegetables</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/meat.jpg" alt="meat">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Fish and Meat</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/drink.jpg" alt="drink">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Drinks</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/kitchen.jpg" alt="kitchen">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Kitchen</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/baby.jpg" alt="baby">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Baby nutrition</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <section class="pt-0">
+        <div class="main-container items-start">
+            <p class="py-4 mb-2 text-[12px] font-normal leading-[16px]">
+                <a href="./index.html" target="_blank" class="text-[#A9A9A9]">Homepage</a>
+                <span class="mx-2">/</span>
+                <span href="#">Fruit and vegetables</span>
+            </p>
+            <div class="w-full flex flex-wrap items-center justify-between mb-2 p-2">
+                <h1 class=" text-[32px] font-semibold font-['Poppins'] leading-[28px] mb-5 md:mb-0">Fruit and vegetables</h1>
+                <div class="flex items-center w-[275px] justify-between">
+                    <div class="flex items-center gap-[5px] grid-view cursor-pointer">
+                        <div>
+                            <img class="min-w-[16px] h-4" src="./img/grid-view-green.svg" alt="grid view icon">
+                        </div>
+                        <div>
+                            <img class="min-w-[16px] h-4 hidden" src="./img/grid-view-gray.svg" alt="grid view icon">
+                        </div>
+                        <p class="text-[12px] font-normal leading-[16px]">Grid view</p>
+                    </div>
+                    <div class="flex items-center gap-[5px] list-view cursor-pointer">
+                        <div>
+                            <img class="min-w-[16px] h-4 hidden" src="./img/list-view-green.svg" alt="list view icon">
+                        </div>
+                        <div>
+                            <img class="min-w-[16px] h-4" src="./img/list-view-gray.svg" alt="list view icon">
+                        </div>
+                        <p class="text-[12px] text-[#a9a9a9] font-normal leading-[16px]">List view</p>
+                    </div>
+                    <div class="flex items-center gap-[5px]">
+                        <p
+                            class="text-[12px] bg-[#F4F8EC] text-[#6A983C] rounded-[12px] font-['Poppins'] px-2 font-semibold leading-[18px]">
+                            117</p>
+                        <p class="text-[12px] text-[#a9a9a9] font-normal leading-[16px]">Products</p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-4 relative filters">
+                <div class="w-full flex flex-wrap items-center gap-4 mb-4">
+                    <div class="block lg:hidden p-2 bg-[#6A983C] rounded-xl cursor-pointer filter-btn">
+                        <img src="./img/burger.svg" alt="">
+                    </div>
+                    <form class="gray-rounded">
+                        <label>
+                            <input type="radio" name="radio" checked />
+                            <span>Filter text</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio" />
+                            <span>Filter text</span>
+                        </label>
+                    </form>
+
+                    <div class="gray-rounded flex flex-row items-center gap-2 py-[10px] px-4 filter-text">
+                        <input type="checkbox" id="todo" name="todo" value="todo">
+                        <label for="todo">Filter</label>
+                        <div class="rounded-[12px] border border-solid border-[#ebebeb] px-2">
+                            <p class="font-['Poppins'] font-bold text-[12px] leading-[18px]">Nmb</p>
+                        </div>
+                    </div>
+
+                    <div class="gray-rounded flex flex-row items-center gap-2 py-[10px] px-4 filter-text">
+                        <input type="checkbox" id="two" name="todo" value="todo">
+                        <label for="two">Filter</label>
+                        <div class="rounded-[12px] border border-solid border-[#ebebeb] px-2">
+                            <p class="font-['Poppins'] font-bold text-[12px] leading-[18px]">Nmb</p>
+                        </div>
+                    </div>
+
+                    <div class="gray-rounded flex items-center px-4 py-3 filter-text gap-6">
+                        <div class="flex items-center gap-2">
+                            <input type="checkbox" id="three" name="todo" value="todo">
+                            <label for="three">Filter</label>
+                            <div class="rounded-[12px] border border-solid border-[#ebebeb] px-2">
+                                <p class="font-['Poppins'] font-bold text-[12px] leading-[18px]">12</p>
+                            </div>
+                        </div>
+                        <div class="w-[1px] h-5 bg-[#d1d1d1]"></div>
+                        <div class="custom-select w-[75px]">
+                            <select>
+                                <option value="0">Select</option>
+                                <option value="2">Select</option>
+                                <option value="3">Select</option>
+                                <option value="4">Select</option>
+                                <option value="5">Select</option>
+                                <option value="6">Select</option>
+                                <option value="7">Select</option>
+                                <option value="8">Select</option>
+                                <option value="9">Select</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <p class="text-[12px] font-semibold font-['Poppins']">Applied filters: </p>
+                    <div class="tag tag-selected">Selected filter <img src="./img/cross.svg" alt=""></div>
+                    <div class="tag tag-selected">Selected filter <img src="./img/cross.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex justify-between">
+        <div class="absolute -left-full lg:left-0 lg:relative ml-5 max-w-[30%] duration-300 filter-aside">
+            <div class="flex flex-col items-center">
+                <div class="aside-links mb-12">
+                    <h4 class="aside-links__title">Categories</h4>
+                    <div class="aside-links__item-nolink">
+                        <a href="#" class="no-underline">Category name</a>
+                        <p class="tag tag-selected">320</p>
+                    </div>
+                    <div class="aside-links__item-nolink">
+                        <a href="#" class="no-underline">Category name</a>
+                        <p class="tag tag-selected">112</p>
+                    </div>
+                    <div class="aside-links__item-nolink">
+                        <a href="#" class="no-underline">Category name</a>
+                        <p class="tag tag-selected">32</p>
+                    </div>
+                    <div class="aside-links__item-nolink">
+                        <a href="#" class="no-underline">Category name</a>
+                        <p class="tag tag-selected">48</p>
+                    </div>
+                </div>
+                <div class="aside-links mb-12">
+                    <h4 class="aside-links__title">Brands</h4>
+                    <div class="flex flex-col gap-3">
+                        <div class="filter-text flex items-center gap-2">
+                            <input type="checkbox" id="brand5" name="todo" value="todo">
+                            <label for="brand5">Filter by brand item</label>
+                        </div>
+                        <div class="filter-text flex items-center gap-2">
+                            <input type="checkbox" id="brand1" name="todo" value="todo" checked>
+                            <label for="brand1">Filter by brand item</label>
+                        </div>
+                        <div class="filter-text flex items-center gap-2">
+                            <input type="checkbox" id="brand2" name="todo" value="todo" checked>
+                            <label for="brand2">Filter by brand item</label>
+                        </div>
+                        <div class="filter-text flex items-center gap-2">
+                            <input type="checkbox" id="brand3" name="todo" value="todo">
+                            <label for="brand3">Filter by brand item</label>
+                        </div>
+                        <div class="filter-text flex items-center gap-2">
+                            <input type="checkbox" id="brand4" name="todo" value="todo">
+                            <label for="brand4">Filter brand by item</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside-links aside-rating mb-12">
+                    <h4 class="aside-links__title">Brands</h4>
+                    <div class="flex flex-col gap-3">
+                        <div class="filter-text flex items-center gap-2">
+                            <input type="checkbox" id="rate5" name="todo" value="todo">
+                            <label for="rate5" class="flex items-center gap-[4.61px]"><img src="./img/icon-star.svg"
+                                    alt="icon-star"><img src="./img/icon-star.svg" alt="icon-star"><img
+                                    src="./img/icon-star.svg" alt="icon-star"><img src="./img/icon-star.svg"
+                                    alt="icon-star"><img src="./img/icon-star.svg" alt="icon-star"></label>
+                        </div>
+                        <div class="filter-text flex items-center gap-2">
+                            <input type="checkbox" id="rate1" name="todo" value="todo" checked>
+                            <label for="rate1" class="flex items-center gap-[4.61px]"><img src="./img/icon-star.svg"
+                                    alt="icon-star"><img src="./img/icon-star.svg" alt="icon-star"><img
+                                    src="./img/icon-star.svg" alt="icon-star"><img src="./img/icon-star.svg"
+                                    alt="icon-star"><img src="./img/icon-star-stroke.svg" alt="icon-star"></label>
+                        </div>
+                        <div class="filter-text flex items-center gap-2">
+                            <input type="checkbox" id="rate2" name="todo" value="todo" checked>
+                            <label for="rate2" class="flex items-center gap-[4.61px]"><img src="./img/icon-star.svg"
+                                    alt="icon-star"><img src="./img/icon-star.svg" alt="icon-star"><img
+                                    src="./img/icon-star.svg" alt="icon-star"><img src="./img/icon-star-stroke.svg"
+                                    alt="icon-star"><img src="./img/icon-star-stroke.svg" alt="icon-star"></label>
+                        </div>
+                        <div class="filter-text flex items-center gap-2">
+                            <input type="checkbox" id="rate3" name="todo" value="todo">
+                            <label for="rate3" class="flex items-center gap-[4.61px]"><img src="./img/icon-star.svg"
+                                    alt="icon-star"><img src="./img/icon-star.svg" alt="icon-star"><img
+                                    src="./img/icon-star-stroke.svg" alt="icon-star"><img
+                                    src="./img/icon-star-stroke.svg" alt="icon-star"><img
+                                    src="./img/icon-star-stroke.svg" alt="icon-star"></label>
+                        </div>
+                        <div class="filter-text flex items-center gap-2">
+                            <input type="checkbox" id="rate4" name="todo" value="todo">
+                            <label for="rate4" class="flex items-center gap-[4.61px]"><img src="./img/icon-star.svg"
+                                    alt="icon-star"><img src="./img/icon-star-stroke.svg" alt="icon-star"><img
+                                    src="./img/icon-star-stroke.svg" alt="icon-star"><img
+                                    src="./img/icon-star-stroke.svg" alt="icon-star"><img
+                                    src="./img/icon-star-stroke.svg" alt="icon-star"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div slider id="slider-distance" class="mb-[23px]">
+                <div>
+                    <div inverse-left style="width:70%;"></div>
+                    <div inverse-right style="width:70%;"></div>
+                    <div range style="left:30%;right:40%;"></div>
+                    <span thumb style="left:30%;"></span>
+                    <span thumb style="left:60%;"></span>
+                    <div sign style="left:30%;">
+                        <span id="value">30</span>
+                    </div>
+                    <div sign style="left:60%;">
+                        <span id="value">60</span>
+                    </div>
+                </div>
+                <input type="range" tabindex="0" value="30" max="100" min="0" step="1" oninput="
+            this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+            var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+            var children = this.parentNode.childNodes[1].childNodes;
+            children[1].style.width=value+'%';
+            children[5].style.left=value+'%';
+            children[7].style.left=value+'%';children[11].style.left=value+'%';
+            children[11].childNodes[1].innerHTML=this.value;" />
+
+                <input type="range" tabindex="0" value="60" max="100" min="0" step="1" oninput="
+            this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+            var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+            var children = this.parentNode.childNodes[1].childNodes;
+            children[3].style.width=(100-value)+'%';
+            children[5].style.right=(100-value)+'%';
+            children[9].style.left=value+'%';children[13].style.left=value+'%';
+            children[13].childNodes[1].innerHTML=this.value;" />
+            </div>
+            <div class="w-full flex items-center jsutify-between gap-[14px] mb-[31px]">
+                <div>
+                    <p class="text-[12px] font-semibold leading-[18px] font-['Poppins']">Min</p>
+                    <input class="max-w-[109px] rounded-xl bg-[#f9f9f9] border border-solid py-3 px-4 font-normal font-[14px] text-[#a9a9a9]  border-[#d1d1d1]" placeholder="0" type="number">
+                </div>
+                <p>-</p>
+                <div>
+                    <p class="text-[12px] font-semibold leading-[18px] font-['Poppins']">Min</p>
+                    <input class="max-w-[109px] rounded-xl bg-[#f9f9f9] border border-solid py-3 px-4 font-normal font-[14px] text-[#a9a9a9]  border-[#d1d1d1]" placeholder="000" type="number">
+                </div>
+            </div>
+            <button class="btn-success btn-sm mr-[34px] apply-btn">Apply</button>
+            <button class="btn-transparent btn-sm">Reset</button>
+
+        </div>
+        <div class="w-full lg:w-[70%]">
+            <div class="flex flex-row flex-wrap justify-evenly gap-8">
+                <a href="#" class="product-box">
+                    <div class="product-imgBox">
+                        <div class="product-sale-tag tag tag-selected">-36%</div>
+                    </div>
+                    <div class="product-content">
+                        <div>
+                            <div class="product-header">
+                                <h4 class="product-title">Product title</h4>
+                                <p class="product-desc">Space for a small product description</p>
+                                <div class="product-rating">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                </div>
+                            </div>
+                            <table class="table-auto product-about">
+                                <tr>
+                                    <td>Fresheness</td>
+                                    <td class="product-status"><span class="text-[#6A983C]">New</span> (Extra new)</td>
+                                </tr>
+                                <tr>
+                                    <td>Farm</td>
+                                    <td class="product-pharm">Grocery Tarm Fields</td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery</td>
+                                    <td class="product-delivery">Europe</td>
+                                </tr>
+                                <tr>
+                                    <td>Stock</td>
+                                    <td><span class="text-[#6A983C]">320</span> pcs</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-price-and-btn">
+                            <div>
+                                <p class="product-price">36.99 USD</p>
+                                <p class="product-sale">48.56</p>
+                            </div>
+                            <div class="product-shipping">
+                                <p class="product-shipping-status">Free shipping</p>
+                                <p class="product-shipping-duration">Delivery in day</p>
+                            </div>
+                            <div class="product-btns">
+                                <button class="btn-buy btn-success btn-md btn-animate">Product detail <img
+                                        src="./img/chevron-right.svg" alt="chevron right"></button>
+                                <button class="btn-gray btn-md"><img class="w-4 h-4" src="./img/icon-heart.svg" alt="icon heart">Add
+                                    to
+                                    wishlist</button>
+                            </div>
+                            <button class="btn-buy btn-success btn-animate btn-sm buy-now block md:hidden">Buy now</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-box">
+                    <div class="product-imgBox">
+                        <div class="product-sale-tag tag tag-selected">-36%</div>
+                    </div>
+                    <div class="product-content">
+                        <div>
+                            <div class="product-header">
+                                <h4 class="product-title">Product title</h4>
+                                <p class="product-desc">Space for a small product description</p>
+                                <div class="product-rating">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                </div>
+                            </div>
+                            <table class="table-auto product-about">
+                                <tr>
+                                    <td>Fresheness</td>
+                                    <td class="product-status"><span class="text-[#6A983C]">New</span> (Extra new)</td>
+                                </tr>
+                                <tr>
+                                    <td>Farm</td>
+                                    <td class="product-pharm">Grocery Tarm Fields</td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery</td>
+                                    <td class="product-delivery">Europe</td>
+                                </tr>
+                                <tr>
+                                    <td>Stock</td>
+                                    <td><span class="text-[#6A983C]">320</span> pcs</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-price-and-btn">
+                            <div>
+                                <p class="product-price">36.99 USD</p>
+                                <p class="product-sale">48.56</p>
+                            </div>
+                            <div class="product-shipping">
+                                <p class="product-shipping-status">Free shipping</p>
+                                <p class="product-shipping-duration">Delivery in day</p>
+                            </div>
+                            <div class="product-btns">
+                                <button class="btn-buy btn-success btn-md btn-animate">Product detail <img
+                                        src="./img/chevron-right.svg" alt="chevron right"></button>
+                                <button class="btn-gray btn-md"><img class="w-4 h-4" src="./img/icon-heart.svg" alt="icon heart">Add
+                                    to
+                                    wishlist</button>
+                            </div>
+                            <button class="btn-buy btn-success btn-animate btn-sm buy-now block md:hidden">Buy now</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-box">
+                    <div class="product-imgBox">
+                        <div class="product-sale-tag tag tag-selected">-36%</div>
+                    </div>
+                    <div class="product-content">
+                        <div>
+                            <div class="product-header">
+                                <h4 class="product-title">Product title</h4>
+                                <p class="product-desc">Space for a small product description</p>
+                                <div class="product-rating">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                </div>
+                            </div>
+                            <table class="table-auto product-about">
+                                <tr>
+                                    <td>Fresheness</td>
+                                    <td class="product-status"><span class="text-[#6A983C]">New</span> (Extra new)</td>
+                                </tr>
+                                <tr>
+                                    <td>Farm</td>
+                                    <td class="product-pharm">Grocery Tarm Fields</td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery</td>
+                                    <td class="product-delivery">Europe</td>
+                                </tr>
+                                <tr>
+                                    <td>Stock</td>
+                                    <td><span class="text-[#6A983C]">320</span> pcs</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-price-and-btn">
+                            <div>
+                                <p class="product-price">36.99 USD</p>
+                                <p class="product-sale">48.56</p>
+                            </div>
+                            <div class="product-shipping">
+                                <p class="product-shipping-status">Free shipping</p>
+                                <p class="product-shipping-duration">Delivery in day</p>
+                            </div>
+                            <div class="product-btns">
+                                <button class="btn-buy btn-success btn-md btn-animate">Product detail <img
+                                        src="./img/chevron-right.svg" alt="chevron right"></button>
+                                <button class="btn-gray btn-md"><img class="w-4 h-4" src="./img/icon-heart.svg" alt="icon heart">Add
+                                    to
+                                    wishlist</button>
+                            </div>
+                            <button class="btn-buy btn-success btn-animate btn-sm buy-now block md:hidden">Buy now</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-box">
+                    <div class="product-imgBox">
+                        <div class="product-sale-tag tag tag-selected">-36%</div>
+                    </div>
+                    <div class="product-content">
+                        <div>
+                            <div class="product-header">
+                                <h4 class="product-title">Product title</h4>
+                                <p class="product-desc">Space for a small product description</p>
+                                <div class="product-rating">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                </div>
+                            </div>
+                            <table class="table-auto product-about">
+                                <tr>
+                                    <td>Fresheness</td>
+                                    <td class="product-status"><span class="text-[#6A983C]">New</span> (Extra new)</td>
+                                </tr>
+                                <tr>
+                                    <td>Farm</td>
+                                    <td class="product-pharm">Grocery Tarm Fields</td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery</td>
+                                    <td class="product-delivery">Europe</td>
+                                </tr>
+                                <tr>
+                                    <td>Stock</td>
+                                    <td><span class="text-[#6A983C]">320</span> pcs</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-price-and-btn">
+                            <div>
+                                <p class="product-price">36.99 USD</p>
+                                <p class="product-sale">48.56</p>
+                            </div>
+                            <div class="product-shipping">
+                                <p class="product-shipping-status">Free shipping</p>
+                                <p class="product-shipping-duration">Delivery in day</p>
+                            </div>
+                            <div class="product-btns">
+                                <button class="btn-buy btn-success btn-md btn-animate">Product detail <img
+                                        src="./img/chevron-right.svg" alt="chevron right"></button>
+                                <button class="btn-gray btn-md"><img class="w-4 h-4" src="./img/icon-heart.svg" alt="icon heart">Add
+                                    to
+                                    wishlist</button>
+                            </div>
+                            <button class="btn-buy btn-success btn-animate btn-sm buy-now block md:hidden">Buy now</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-box">
+                    <div class="product-imgBox">
+                        <div class="product-sale-tag tag tag-selected">-36%</div>
+                    </div>
+                    <div class="product-content">
+                        <div>
+                            <div class="product-header">
+                                <h4 class="product-title">Product title</h4>
+                                <p class="product-desc">Space for a small product description</p>
+                                <div class="product-rating">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                    <img src="./img/icon-star-stroke.svg" alt="icon star">
+                                </div>
+                            </div>
+                            <table class="table-auto product-about">
+                                <tr>
+                                    <td>Fresheness</td>
+                                    <td class="product-status"><span class="text-[#6A983C]">New</span> (Extra new)</td>
+                                </tr>
+                                <tr>
+                                    <td>Farm</td>
+                                    <td class="product-pharm">Grocery Tarm Fields</td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery</td>
+                                    <td class="product-delivery">Europe</td>
+                                </tr>
+                                <tr>
+                                    <td>Stock</td>
+                                    <td><span class="text-[#6A983C]">320</span> pcs</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-price-and-btn">
+                            <div>
+                                <p class="product-price">36.99 USD</p>
+                                <p class="product-sale">48.56</p>
+                            </div>
+                            <div class="product-shipping">
+                                <p class="product-shipping-status">Free shipping</p>
+                                <p class="product-shipping-duration">Delivery in day</p>
+                            </div>
+                            <div class="product-btns">
+                                <button class="btn-buy btn-success btn-md btn-animate">Product detail <img
+                                        src="./img/chevron-right.svg" alt="chevron right"></button>
+                                <button class="btn-gray btn-md"><img class="w-4 h-4" src="./img/icon-heart.svg" alt="icon heart">Add
+                                    to
+                                    wishlist</button>
+                            </div>
+                            <button class="btn-buy btn-success btn-animate btn-sm buy-now block md:hidden">Buy now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-container flex-row">
+            <div class="flex items-center pagination text-[12px] leading-[16px] font-normal gap-2">
+                <p class="text-[#a9a9a9]">Page: </p>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#" class="active">3</a>
+                <a href="#">4</a>
+            </div>
+            <button class="btn-success btn-xxl btn-animate">Show more products <img class="rotate-[270deg]" src="./img/chevron-white.svg" alt=""> </button>
+            <div class="flex items-center gap-1">
+                <div class="tag tag-selected">336</div>
+                <p class="text-[12px] text-[#a9a9a9] font-normal leading-[16px]">Products</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-16">
+        <div class="main-container md:flex-row items-stretch justify-between mb-12">
+            <div class="footer-links w-full flex flex-row justify-around flex-wrap md:flex-nowrap">
+                <div class="mr-5 mb-5">
+                    <h4 class="footer__title">Get In Touch</h4>
+                    <div class="footer__anchor-wrapper">
+                        <a href="#" class="footer__anchor">About us</a>
+                        <a href="#" class="footer__anchor">Careers</a>
+                        <a href="#" class="footer__anchor">Press releases</a>
+                        <a href="#" class="footer__anchor">Blog</a>
+                    </div>
+                </div>
+                <div class="mr-5 mb-5">
+                    <h4 class="footer__title">Connections</h4>
+                    <div class="footer__anchor-wrapper">
+                        <a href="#" class="footer__anchor">Facebook</a>
+                        <a href="#" class="footer__anchor">Instagram</a>
+                        <a href="#" class="footer__anchor">Twitter</a>
+                        <a href="#" class="footer__anchor">YouTube</a>
+                        <a href="#" class="footer__anchor">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links w-full flex flex-row justify-around flex-wrap md:flex-nowrap">
+                <div class="mr-5 mb-5">
+                    <h4 class="footer__title">Earnings</h4>
+                    <div class="footer__anchor-wrapper">
+                        <a href="#" class="footer__anchor">Become an affilate</a>
+                        <a href="#" class="footer__anchor">Advertise your product</a>
+                        <a href="#" class="footer__anchor">Sell on Market</a>
+                    </div>
+                </div>
+                <div class="mr-5 mb-5">
+                    <h4 class="footer__title">Account</h4>
+                    <div class="footer__anchor-wrapper">
+                        <a href="#" class="footer__anchor">Your account</a>
+                        <a href="#" class="footer__anchor">Returns center</a>
+                        <a href="#" class="footer__anchor">100% purchase protection</a>
+                        <a href="#" class="footer__anchor">Chat with us</a>
+                        <a href="#" class="footer__anchor">Help</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container items-start mb-8">
+            <h4 class="font-['Poppins'] font-semibold text-[18px] leading-[27px] mb-4">Product tags</h4>
+            <div class="flex flex-wrap gap-4">
+                <div class="tag tag-not-selected">Beans</div>
+                <div class="tag tag-not-selected">Carrots</div>
+                <div class="tag tag-not-selected">Apples</div>
+                <div class="tag tag-not-selected">Garlic</div>
+                <div class="tag tag-not-selected">Mushrooms</div>
+                <div class="tag tag-not-selected">Tomatoes</div>
+                <div class="tag tag-not-selected">Chillie peppers</div>
+                <div class="tag tag-not-selected">Broccoli</div>
+                <div class="tag tag-not-selected">Watermelons </div>
+                <div class="tag tag-not-selected">Oranges</div>
+                <div class="tag tag-not-selected">Bananas</div>
+                <div class="tag tag-not-selected">Grapes</div>
+                <div class="tag tag-not-selected">Cherries</div>
+                <div class="tag tag-not-selected">Meat</div>
+                <div class="tag tag-not-selected">Seo tag</div>
+                <div class="tag tag-not-selected">Fresh food</div>
+                <div class="tag tag-not-selected">Lemons</div>
+            </div>
+        </div>
+        <div class="main-container items-start">
+            <p class="font-normal text-[14px] leading-[19px]">Copyright &copy; 2020 UIC.group</p>
+        </div>
+    </footer>
+
+    <!--SVG Sprites -->
+
+    <!-- Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- My.js -->
+    <script src="./js/scripts.js"></script>
+
+
+</body>
+
+</html>

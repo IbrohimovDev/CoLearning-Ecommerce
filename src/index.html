@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Freshnesecom</title>
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+    <section class="pt-0">
+        <header>
+            <div
+                class="flex md:hidden w-full min-h-screen fixed top-0 left-[-100%] justify-center items-center bg-white z-50 duration-300 mobile-menu">
+                <div class="flex flex-col min-h-full">
+                    <div class="flex flex-col items-center gap-[33px]">
+                        <a href="#" class="text-[12px] leading-[16px] text-[#7c9e5a]">Blog</a>
+                        <a href="#" class="text-[12px] leading-[16px] text-[#6a983c]">About</a>
+                        <a href="#" class="text-[12px] leading-[16px] text-[#6a983c]">Careers</a>
+                        <a href="#" class="text-[12px] leading-[16px] text-[#6A983C] font-normal">Chat with us</a>
+                        <a href="tel:998330072003" class="text-[12px] leading-[16px] font-normal">+998 33 007 20 03</a>
+                        <a href="mailto:mrimofficial7@gmail.com"
+                            class="text-[12px] leading-[16px] font-normal">info@freshnesecom.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-container flex-row fixed top-0 left-0 w-full bg-white z-50 px-5 flex md:hidden shadow-lg">
+                <div class="logo mr-2">
+                    <img src="./img/Brand.svg" alt="brand logo">
+                </div>
+                <div class="mobile-burger relative z-50 right-0 w-5 h-5 bg-cover bg-no-repeat bg-center">
+                </div>
+            </div>
+            <div class="main-container hidden md:flex flex-row items-center py-4">
+                <div class="flex items-center gap-[33px]">
+                    <a href="#" class="text-[12px] leading-[16px] text-[#6A983C] font-normal">Chat with us</a>
+                    <a href="tel:998330072003" class="text-[12px] leading-[16px] font-normal">+998 33 007 20 03</a>
+                    <a href="mailto:mrimofficial7@gmail.com"
+                        class="text-[12px] leading-[16px] font-normal">info@freshnesecom.com</a>
+                </div>
+                <div class="flex items-center gap-[38px]">
+                    <a href="#" class="text-[12px] leading-[16px] text-[#6a983c]">Blog</a>
+                    <a href="#" class="text-[12px] leading-[16px] text-[#6a983c]">About</a>
+                    <a href="#" class="text-[12px] leading-[16px] text-[#6a983c]">Careers</a>
+                </div>
+            </div>
+            <div class="w-[90%] max-w-[1260px] mx-auto">
+                <hr class="bg-[#151515]">
+            </div>
+            <div class="main-container flex-row items-center pt-20 md:pt-10 pb-12">
+                <div class="logo mr-5 hidden md:block">
+                    <img src="./img/Brand.svg" alt="logo brand">
+                </div>
+                <div
+                    class="flex items-center justify-between rounded-[12px] max-w-[500px] sm:w-[500px] border border-solid border-[#d1d1d1] bg-[#f9f9f9] py-[10px] px-4">
+                    <!-- Dropdown -->
+                    <div class="custom-select border-r border-solid border-[#d1d1d1]" style="width:140px;">
+                        <select>
+                            <option value="0">All categories</option>
+                            <option value="1">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Kitchen</option>
+                            <option value="7">Nutrition</option>
+                            <option value="8">Baby</option>
+                            <option value="9">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text"
+                            class="w-full border-none outline-none px-3 max-w-[262px] text-[14px] bg-transparent placeholder:text-[#a9a9a9] placeholder:text-[14px]"
+                            placeholder="Search Products, categories">
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./img/icon-search.svg" alt="search icon">
+                    </div>
+                </div>
+                <div class="fixed sm:relative bottom-0 left-0 w-full h-14 sm:py-0 bg-white flex items-center justify-around sm:justify-between sm:w-[88px] ml-0 sm:ml-5 z-40">
+                    <div>
+                        <img src="./img/icon-user.svg" alt="user icon">
+                    </div>
+                    <div class="relative cart-wrapper">
+                        <img src="./img/icon-cart.svg" alt="cart icon">
+                        <div
+                            class="absolute -bottom-[8px] -left-[5px] w-4 h-4 rounded-full flex items-center justify-center bg-[#E5704B]">
+                            <span class="text-white text-[12px] font-semibold">4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="bg-[#f9f9f9] py-4">
+                <div class="main-container flex-row items-center justify-start gap-[42px]">
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="0">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Kitchen</option>
+                            <option value="7">Nutrition</option>
+                            <option value="8">Baby</option>
+                            <option value="9">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="1">Fruit</option>
+                            <option value="2">Bakery</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Kitchen</option>
+                            <option value="7">Nutrition</option>
+                            <option value="8">Baby</option>
+                            <option value="9">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="1">Vegetables</option>
+                            <option value="2">Bakery</option>
+                            <option value="3">Fruit</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Kitchen</option>
+                            <option value="7">Nutrition</option>
+                            <option value="8">Baby</option>
+                            <option value="9">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="0">Meat</option>
+                            <option value="1">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Drinks</option>
+                            <option value="5">Kitchen</option>
+                            <option value="6">Nutrition</option>
+                            <option value="7">Baby</option>
+                            <option value="8">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="0">Drinks</option>
+                            <option value="1">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Kitchen</option>
+                            <option value="6">Nutrition</option>
+                            <option value="7">Baby</option>
+                            <option value="8">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="0">Kitchen</option>
+                            <option value="1">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Nutrition</option>
+                            <option value="7">Baby</option>
+                            <option value="8">Pharmacy</option>
+                        </select>
+                    </div>
+                    <div class="hidden md:block custom-select w-[120px]">
+                        <select>
+                            <option value="0">Nutrition</option>
+                            <option value="1">Bakery</option>
+                            <option value="2">Fruit</option>
+                            <option value="3">Vegetables</option>
+                            <option value="4">Meat</option>
+                            <option value="5">Drinks</option>
+                            <option value="6">Kitchen</option>
+                            <option value="7">Baby</option>
+                            <option value="8">Pharmacy</option>
+                        </select>
+                    </div>
+
+                    <div class="swiper navSwiper block md:hidden">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/bread.jpg" alt="bread">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Bakery</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/fruit.jpg" alt="fruit">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Fruit</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/vegetable.jpg" alt="vegetable">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Vegetables</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/meat.jpg" alt="meat">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Fish and Meat</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/drink.jpg" alt="drinks">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Drinks</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/kitchen.jpg" alt="kitchen">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Kitchen</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="overflow-hidden w-20 h-20 rounded-3xl">
+                                        <img src="./img/baby.jpg" alt="baby">
+                                    </div>
+                                    <p
+                                        class="text-[12px] w-20 text-center overflow-hidden text-ellipsis whitespace-nowrap mt-1">
+                                        Baby nutrition</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <section class="pt-0 md:pt-16">
+        <div class="main-container flex-row items-stretch gap-8">
+            <div class="hidden md:block aside-links">
+                <h5 class="aside-links__title">Category menu</h5>
+                <div class="aside-links__links">
+                    <a href="#" class="aside-links__item">Bakery</a>
+                    <a href="#" class="aside-links__item">Fruit vegetables</a>
+                    <a href="#" class="aside-links__item">Meat and fish</a>
+                    <a href="#" class="aside-links__item">Drinks</a>
+                    <a href="#" class="aside-links__item">Kitchen</a>
+                </div>
+                <button class="btn-xl btn-gray btn-animate">More categories <img src="./img/chevron-black.svg"
+                        alt="chevron right"></button>
+            </div>
+            <div class="w-full flex flex-row flex-wrap xl:flex-nowrap justify-evenly gap-8">
+                <div class="rounded-xl max-w-[419px] xl:w-[419px] h-[282px] pt-[48px] pb-[32px] px-[32px] bg-[#F4F8EC] bg-cover bg-no-repeat"
+                    style="background:url('./img/card-bg.png')">
+                    <p class="font-semibold mb-2 text-[#6A983C] text-[12px] leading-[18px] font-['Poppins']">Banner
+                        subfocus
+                    </p>
+                    <h4 class="font-['Poppins'] font-semibold text-[22px] leading-[33px] mb-[92px]">Space for heading
+                    </h4>
+                    <button class="btn-animate btn-xl btn-border">Read recipes <img src="./img/chevron-right.svg"
+                            alt="chevron right"></button>
+                </div>
+                <div class="rounded-xl max-w-[419px] xl:w-[419px] h-[282px] pt-[48px] pb-[32px] px-[32px] bg-[#F4F8EC] bg-cover bg-no-repeat"
+                    style="background:url('./img/card-bg.png')">
+                    <p class="font-semibold mb-2 text-[#6A983C] text-[12px] leading-[18px] font-['Poppins']">Banner
+                        subfocus
+                    </p>
+                    <h4 class="font-['Poppins'] font-semibold text-[22px] leading-[33px] mb-[92px]">Space for heading
+                    </h4>
+                    <button class="btn-animate btn-xl btn-border">Read recipes <img src="./img/chevron-right.svg"
+                            alt="chevron"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-container flex-row gap-8">
+            <div class="hidden md:block aside-links">
+                <h5 class="aside-links__title">Best selling products</h5>
+                <div class="aside-links__links">
+                    <a href="#" class="aside-links__item">Bakery</a>
+                    <a href="#" class="aside-links__item">Fruit vegetables</a>
+                    <a href="#" class="aside-links__item">Meat and fish</a>
+                    <a href="#" class="aside-links__item">Drinks</a>
+                    <a href="#" class="aside-links__item">Kitchen</a>
+                </div>
+                <button class="btn-xl btn-gray btn-animate">More categories <img src="./img/chevron-black.svg"
+                        alt="chevron"></button>
+            </div>
+
+            <div class="swiper prodSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main-cards">
+                            <div class="main-cards__imgBox">
+                                <!-- .main-cards__sale -->
+                            </div>
+                            <div class="main-cards__title">Product title</div>
+                            <div class="main-cards__desc">Space for small product description</div>
+                            <div class="main-cards__footer">
+                                <div>
+                                    <div class="main-cards__price">1.48 USD</div>
+                                    <!-- .main-cards__old-price     -->
+                                </div>
+                                <button class="main-cards__button">Buy now</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-cards">
+                            <div class="main-cards__imgBox">
+                                <div class="main-cards__sale">-36%</div>
+                            </div>
+                            <div class="main-cards__title">Product title</div>
+                            <div class="main-cards__desc">Space for small product description</div>
+                            <div class="main-cards__footer">
+                                <div>
+                                    <div class="main-cards__price">1.48 USD</div>
+                                    <div class="main-cards__old-price">48.56</div>
+                                </div>
+                                <button class="main-cards__button">Buy now</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-cards">
+                            <div class="main-cards__imgBox">
+                                <div class="main-cards__sale">-36%</div>
+                            </div>
+                            <div class="main-cards__title">Product title</div>
+                            <div class="main-cards__desc">Space for small product description</div>
+                            <div class="main-cards__footer">
+                                <div>
+                                    <div class="main-cards__price">1.48 USD</div>
+                                    <div class="main-cards__old-price">48.56</div>
+                                </div>
+                                <button class="main-cards__button">Buy now</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section>
+        <div class="main-container flex-row gap-8">
+            <div class="hidden md:block aside-links">
+                <h5 class="aside-links__title">Best from farmers</h5>
+                <div class="aside-links__links">
+                    <a href="#" class="aside-links__item">Carrots</a>
+                    <a href="#" class="aside-links__item">Tomatos</a>
+                    <a href="#" class="aside-links__item">Potatoes</a>
+                    <a href="#" class="aside-links__item">Chicken</a>
+                    <a href="#" class="aside-links__item">Beef</a>
+                </div>
+                <button class="btn-xl btn-gray btn-animate">More categories <img src="./img/chevron-black.svg"
+                        alt="chevron"></button>
+            </div>
+            <div class="swiper prodSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main-cards">
+                            <div class="main-cards__imgBox">
+                                <!-- .main-cards__sale -->
+                            </div>
+                            <div class="main-cards__title">Product title</div>
+                            <div class="main-cards__desc">Space for small product description</div>
+                            <div class="main-cards__footer">
+                                <div>
+                                    <div class="main-cards__price">1.48 USD</div>
+                                    <!-- .main-cards__old-price     -->
+                                </div>
+                                <button class="main-cards__button">Buy now</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-cards">
+                            <div class="main-cards__imgBox">
+                                <div class="main-cards__sale">-36%</div>
+                            </div>
+                            <div class="main-cards__title">Product title</div>
+                            <div class="main-cards__desc">Space for small product description</div>
+                            <div class="main-cards__footer">
+                                <div>
+                                    <div class="main-cards__price">1.48 USD</div>
+                                    <div class="main-cards__old-price">48.56</div>
+                                </div>
+                                <button class="main-cards__button">Buy now</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-cards">
+                            <div class="main-cards__imgBox">
+                                <div class="main-cards__sale">-36%</div>
+                            </div>
+                            <div class="main-cards__title">Product title</div>
+                            <div class="main-cards__desc">Space for small product description</div>
+                            <div class="main-cards__footer">
+                                <div>
+                                    <div class="main-cards__price">1.48 USD</div>
+                                    <div class="main-cards__old-price">48.56</div>
+                                </div>
+                                <button class="main-cards__button">Buy now</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="main-container flex-row">
+            <h3 class="font-['Poppins'] font-semibold text-[18px] leading-[27px]">Our customers says</h3>
+            <button class="btn-sm bg-none btn-animate">Button <img src="./img/chevron-black.svg" alt="chevron"></button>
+        </div>
+        <div class="main-container">
+            <div class="swiper mySwiper">
+                <div
+                    class="absolute z-40 left-0 top-1/2 -translate-y-[40%]  w-[88px] h-[227px] bg-gradient-to-r from-white">
+                    <div
+                        class="prev absolute flex items-center justify-center top-1/2 -translate-y-[40%] left-0 w-8 h-12 bg-black rounded-tr-[12px] rounded-br-[12px]">
+                        <img src="./img/chevron-white.svg" alt="chevron">
+                    </div>
+                </div>
+                <div
+                    class="absolute z-40 right-0 top-1/2 -translate-y-[40%] w-[88px]  h-[227px] bg-gradient-to-r from-transparent to-white">
+                    <div
+                        class="next absolute flex items-center justify-center top-1/2 -translate-y-[40%] right-0 w-8 h-12 bg-black rounded-tl-[12px] rounded-bl-[12px]">
+                        <img class="rotate-180" src="./img/chevron-white.svg" alt="chevron">
+                    </div>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <div class="testimonial__text">“ This is an super space for your customers qoute. Don’t
+                                worry it
+                                works smooth as pie. You will get all what you need by writiing a text here “</div>
+                            <div class="testimonial__name">Name and Surname</div>
+                            <div class="testimonial__avatar">
+                                <img src="./img/user-1.png" alt="user avatar">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <div class="testimonial__text">“ This is an super space for your customers qoute. Don’t
+                                worry it
+                                works smooth as pie. You will get all what you need by writiing a text here “</div>
+                            <div class="testimonial__name">Name and Surname</div>
+                            <div class="testimonial__avatar">
+                                <img src="./img/user-2.png" alt="user avatar">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <div class="testimonial__text">“ This is an super space for your customers qoute. Don’t
+                                worry it
+                                works smooth as pie. You will get all what you need by writiing a text here “</div>
+                            <div class="testimonial__name">Name and Surname</div>
+                            <div class="testimonial__avatar">
+                                <img src="./img/user-3.png" alt="user avatar">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <div class="testimonial__text">“ This is an super space for your customers qoute. Don’t
+                                worry it
+                                works smooth as pie. You will get all what you need by writiing a text here “</div>
+                            <div class="testimonial__name">Name and Surname</div>
+                            <div class="testimonial__avatar">
+                                <img src="./img/user-4.png" alt="user avatar">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <div class="testimonial__text">“ This is an super space for your customers qoute. Don’t
+                                worry it
+                                works smooth as pie. You will get all what you need by writiing a text here “</div>
+                            <div class="testimonial__name">Name and Surname</div>
+                            <div class="testimonial__avatar">
+                                <img src="./img/user-1.png" alt="user avatar">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <div class="testimonial__text">“ This is an super space for your customers qoute. Don’t
+                                worry it
+                                works smooth as pie. You will get all what you need by writiing a text here “</div>
+                            <div class="testimonial__name">Name and Surname</div>
+                            <div class="testimonial__avatar">
+                                <img src="./img/user-2.png" alt="user avatar">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <div class="testimonial__text">“ This is an super space for your customers qoute. Don’t
+                                worry it
+                                works smooth as pie. You will get all what you need by writiing a text here “</div>
+                            <div class="testimonial__name">Name and Surname</div>
+                            <div class="testimonial__avatar">
+                                <img src="./img/user-3.png" alt="user avatar">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <div class="testimonial__text">“ This is an super space for your customers qoute. Don’t
+                                worry it
+                                works smooth as pie. You will get all what you need by writiing a text here “</div>
+                            <div class="testimonial__name">Name and Surname</div>
+                            <div class="testimonial__avatar">
+                                <img src="./img/user-4.png" alt=" user avatar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-container">
+            <div class="w-full mb-[37px] flex flex-row items-center justify-between">
+                <h3 class="font-['Poppins'] font-semibold text-[18px] leading-[27px]">Our customers says</h3>
+                <button class="btn-sm bg-none btn-animate">Button <img src="./img/chevron-black.svg" alt="chevron"></button>
+            </div>
+            <div class="w-full flex flex-row justify-between">
+                <div class="swiper fourSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="main-cards">
+                                <div class="main-cards__imgBox">
+                                    <!-- .main-cards__sale -->
+                                </div>
+                                <div class="main-cards__title">Product title</div>
+                                <div class="main-cards__desc">Space for small product description</div>
+                                <div class="main-cards__footer">
+                                    <div>
+                                        <div class="main-cards__price">1.48 USD</div>
+                                        <!-- .main-cards__old-price     -->
+                                    </div>
+                                    <button class="main-cards__button">Buy now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-cards">
+                                <div class="main-cards__imgBox">
+                                    <div class="main-cards__sale">-36%</div>
+                                </div>
+                                <div class="main-cards__title">Product title</div>
+                                <div class="main-cards__desc">Space for small product description</div>
+                                <div class="main-cards__footer">
+                                    <div>
+                                        <div class="main-cards__price">1.48 USD</div>
+                                        <div class="main-cards__old-price">48.56</div>
+                                    </div>
+                                    <button class="main-cards__button">Buy now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-cards">
+                                <div class="main-cards__imgBox">
+                                    <div class="main-cards__sale">-36%</div>
+                                </div>
+                                <div class="main-cards__title">Product title</div>
+                                <div class="main-cards__desc">Space for small product description</div>
+                                <div class="main-cards__footer">
+                                    <div>
+                                        <div class="main-cards__price">1.48 USD</div>
+                                        <div class="main-cards__old-price">48.56</div>
+                                    </div>
+                                    <button class="main-cards__button">Buy now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-cards">
+                                <div class="main-cards__imgBox">
+                                    <div class="main-cards__sale">-36%</div>
+                                </div>
+                                <div class="main-cards__title">Product title</div>
+                                <div class="main-cards__desc">Space for small product description</div>
+                                <div class="main-cards__footer">
+                                    <div>
+                                        <div class="main-cards__price">1.48 USD</div>
+                                        <div class="main-cards__old-price">48.56</div>
+                                    </div>
+                                    <button class="main-cards__button">Buy now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-container">
+            <div class="w-full mb-[37px] flex flex-row items-center justify-between">
+                <h3 class="font-['Poppins'] font-semibold text-[18px] leading-[27px]">Read our blog posts</h3>
+                <button class="btn-sm bg-none btn-animate">Go to Blog <img src="./img/chevron-black.svg"
+                        alt="chevron"></button>
+            </div>
+            <div class="flex items-start justify-center gap-8 flex-wrap w-full">
+                <div class="w-[469px]">
+                    <div class="blog-image">
+                        <div class="blog-image__tag tag tag-selected">Dinner tips</div>
+                        <div class="img-dark-layer">
+                        </div>
+                        <div class="blog-image__footer">
+                            <h4 class="blog-image__title">Our chef tips for a great tasty dinner ready in 20 minutes
+                            </h4>
+                            <div class="blog-image__user-wrapper">
+                                <div class="blog-image__avatar">
+                                    <img src="./img/user-1.png" alt="user avatar">
+                                </div>
+                                <p class="author-date text-white">
+                                    <span class="mr-4s">Author</span>
+                                    <span>15. 6. 2022</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="blog-wrapper">
+                    <div class="blog__imgBox">
+                        <img src="./img/food-2.png" alt="food">
+                    </div>
+                    <div class="blog__tag tag tag-selected">Vegetable</div>
+                    <h4 class="blog__title">Which vegetable your family will love and want’s eat each day</h4>
+                    <p class="author-date">
+                        <span class="mr-4s">Author</span>
+                        <span>15. 6. 2022</span>
+                    </p>
+                </a>
+                <div class="blog-blocks flex flex-col gap-8">
+                    <a href="#"
+                        class="hover:bg-[#f1f1f1] rounded-[12px] duration-300 p-5 cursor-pointer max-w-[369px] flex items-center justify-between">
+
+                        <div>
+                            <h6 class="text-[15px] leading-[22.5px] font-medium font-['Poppins'] mb-4">Salat is kinda
+                                good start to your morning routines</h6>
+                            <p class="author-date text-[12px] font-normal leading-[16px]">
+                                <span class="mr-4s">Author</span>
+                                <span>15. 6. 2022</span>
+                            </p>
+                        </div>
+                        <div class="min-w-[96px] h-24">
+                            <img src="./img/food-3.png" alt="food">
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="hover:bg-[#f1f1f1] rounded-[12px] duration-300 p-5 cursor-pointer max-w-[369px] flex items-center justify-between">
+
+                        <div>
+                            <h6 class="text-[15px] leading-[22.5px] font-medium font-['Poppins'] mb-4">Salat is kinda
+                                good start to your morning routines</h6>
+                            <p class="author-date text-[12px] font-normal leading-[16px]">
+                                <span class="mr-4s">Author</span>
+                                <span>15. 6. 2022</span>
+                            </p>
+                        </div>
+                        <div class="min-w-[96px] h-24">
+                            <img src="./img/food-4.png" alt="food">
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="hover:bg-[#f1f1f1] rounded-[12px] duration-300 p-5 cursor-pointer max-w-[369px] flex items-center justify-between">
+
+                        <div>
+                            <h6 class="text-[15px] leading-[22.5px] font-medium font-['Poppins'] mb-4">Salat is kinda
+                                good start to your morning routines</h6>
+                            <p class="author-date text-[12px] font-normal leading-[16px]">
+                                <span class="mr-4s">Author</span>
+                                <span>15. 6. 2022</span>
+                            </p>
+                        </div>
+                        <div class="min-w-[96px] h-24">
+                            <img src="./img/food-5.png" alt="food">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+    </section>
+
+    <footer class="footer py-16">
+        <div class="main-container md:flex-row items-stretch justify-between mb-12">
+            <div class="footer-links w-full flex flex-row justify-around flex-wrap md:flex-nowrap">
+                <div class="mr-5 mb-5">
+                    <h4 class="footer__title">Get In Touch</h4>
+                    <div class="footer__anchor-wrapper">
+                        <a href="#" class="footer__anchor">About us</a>
+                        <a href="#" class="footer__anchor">Careers</a>
+                        <a href="#" class="footer__anchor">Press releases</a>
+                        <a href="#" class="footer__anchor">Blog</a>
+                    </div>
+                </div>
+                <div class="mr-5 mb-5">
+                    <h4 class="footer__title">Connections</h4>
+                    <div class="footer__anchor-wrapper">
+                        <a href="#" class="footer__anchor">Facebook</a>
+                        <a href="#" class="footer__anchor">Instagram</a>
+                        <a href="#" class="footer__anchor">Twitter</a>
+                        <a href="#" class="footer__anchor">YouTube</a>
+                        <a href="#" class="footer__anchor">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links w-full flex flex-row justify-around flex-wrap md:flex-nowrap">
+                <div class="mr-5 mb-5">
+                    <h4 class="footer__title">Earnings</h4>
+                    <div class="footer__anchor-wrapper">
+                        <a href="#" class="footer__anchor">Become an affilate</a>
+                        <a href="#" class="footer__anchor">Advertise your product</a>
+                        <a href="#" class="footer__anchor">Sell on Market</a>
+                    </div>
+                </div>
+                <div class="mr-5 mb-5">
+                    <h4 class="footer__title">Account</h4>
+                    <div class="footer__anchor-wrapper">
+                        <a href="#" class="footer__anchor">Your account</a>
+                        <a href="#" class="footer__anchor">Returns center</a>
+                        <a href="#" class="footer__anchor">100% purchase protection</a>
+                        <a href="#" class="footer__anchor">Chat with us</a>
+                        <a href="#" class="footer__anchor">Help</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container items-start mb-8">
+            <h4 class="font-['Poppins'] font-semibold text-[18px] leading-[27px] mb-4">Product tags</h4>
+            <div class="flex flex-wrap gap-4">
+                <div class="tag tag-not-selected">Beans</div>
+                <div class="tag tag-not-selected">Carrots</div>
+                <div class="tag tag-not-selected">Apples</div>
+                <div class="tag tag-not-selected">Garlic</div>
+                <div class="tag tag-not-selected">Mushrooms</div>
+                <div class="tag tag-not-selected">Tomatoes</div>
+                <div class="tag tag-not-selected">Chillie peppers</div>
+                <div class="tag tag-not-selected">Broccoli</div>
+                <div class="tag tag-not-selected">Watermelons </div>
+                <div class="tag tag-not-selected">Oranges</div>
+                <div class="tag tag-not-selected">Bananas</div>
+                <div class="tag tag-not-selected">Grapes</div>
+                <div class="tag tag-not-selected">Cherries</div>
+                <div class="tag tag-not-selected">Meat</div>
+                <div class="tag tag-not-selected">Seo tag</div>
+                <div class="tag tag-not-selected">Fresh food</div>
+                <div class="tag tag-not-selected">Lemons</div>
+            </div>
+        </div>
+        <div class="main-container items-start">
+            <p class="font-normal text-[14px] leading-[19px]">Copyright &copy; 2020 UIC.group</p>
+        </div>
+    </footer>
+
+    
+
+    <!-- Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- My.js -->
+    <script src="./js/scripts.js"></script>
+
+
+</body>
+
+</html>
